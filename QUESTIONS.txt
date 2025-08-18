@@ -1,0 +1,10 @@
+1)Implement a simple reflex agent in python to navigate a grid enviourment avoiding obstackles and performing basic tasks. 
+2)Write a Python program to read an ASCII grid, find the start S, and list all task cells T.
+3)Write a Python program to implement a simple Number Guessing Game:
+The program should randomly select a secret number between .
+The player should repeatedly guess the number until they find the correct answer.
+After each guess, the program should give feedback:
+ Print if the guess is less than the secret number,
+  Print if the guess is greater than the secret number.
+   When the correct number is guessed, display a success message along with the number of attempts taken
+4)Write a simple python program to implement a tic-tac-toe game.
