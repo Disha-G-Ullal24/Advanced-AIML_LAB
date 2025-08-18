@@ -1,6 +1,3 @@
-# Simple Python program to read an ASCII grid,
-# find the start 'S' and list all task cells 'T'
-
 grid = [
     [' ', ' ', 'O', 'T', ' '],
     ['T', 'O', ' ', ' ', ' '],
@@ -21,3 +18,4 @@ for i in range(len(grid)):
 
 print("Start Position:", start)
 print("Task Cells:", tasks)
+
