@@ -8,3 +8,4 @@ After each guess, the program should give feedback:
   Print if the guess is greater than the secret number.
    When the correct number is guessed, display a success message along with the number of attempts taken
 4)Write a simple python program to implement a tic-tac-toe game.
+5)create a python script to demonstrate the use of basic probablity notations including ,events ,outcomes, and values.
