@@ -1,0 +1,27 @@
+# Simple Python program ...: comment describing what the script does (ignored by Python).
+
+grid = [ ... ]: defines a 2D list (list of lists) representing the ASCII grid. Each inner list is a row; characters are cells.
+
+Blank line: just spacing for readability.
+
+start = None: a placeholder to store the coordinates of S once found.
+
+tasks = []: empty list to collect coordinates of every T.
+
+for i in range(len(grid)): loop over row indices (0 to rows-1).
+
+for j in range(len(grid[i])): inner loop over column indices (0 to cols-1) for the current row.
+
+if grid[i][j] == 'S':: check if the current cell is the start S.
+
+start = (i, j): save the row/col of S as a tuple.
+
+elif grid[i][j] == 'T':: otherwise, if the cell is a task T…
+
+tasks.append((i, j)): …add its coordinates to the tasks list.
+
+print("Start Position:", start): display the coordinates of S.
+
+print("Task Cells:", tasks): display a list of coordinates for all T cells.
+
+Tip: Coordinates are in (row, column) order, both zero-indexed.

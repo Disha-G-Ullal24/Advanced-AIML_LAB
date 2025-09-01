@@ -1,0 +1,25 @@
+import random: brings in Python’s random module to generate random numbers.
+
+# Secret number between 1 and 50: comment explaining the next line.
+
+secret = random.randint(1, 50): picks a random integer from 1 to 50 (inclusive) and stores it in secret.
+
+print("Guess the number between 1 and 50!"): prints instructions for the player.
+
+while True: starts an infinite loop; we’ll break out when the guess is correct.
+
+guess = int(input("Enter your guess: ")): asks the user for a guess (string), converts it to an integer, and stores it in guess.
+
+if guess < secret: checks if the guess is smaller than the secret number.
+
+print("Too low! Try again."): feedback for a low guess.
+
+elif guess > secret: checks if the guess is larger than the secret number.
+
+print("Too high! Try again."): feedback for a high guess.
+
+else: runs only when guess == secret.
+
+print("🎉 Correct! The secret number was", secret): success message revealing the secret.
+
+break: exits the while True loop, ending the game.

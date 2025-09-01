@@ -1,0 +1,115 @@
+📌 Code Block:
+# Probability Calculation
+probability = len(event) / len(sample_space)
+
+
+👉 Here we calculate the probability of the event.
+
+len(event) → number of favorable outcomes.
+
+len(sample_space) → total number of possible outcomes (6 for a dice).
+
+Formula:
+
+𝑃
+(
+𝐸
+)
+=
+∣
+𝐸
+∣
+∣
+𝑆
+∣
+P(E)=
+∣S∣
+∣E∣
+	​
+
+
+Example: Event = {2,4,6}, then 
+𝑃
+(
+𝐸
+)
+=
+3
+/
+6
+=
+0.5
+P(E)=3/6=0.5.
+
+# Show results
+print(f"\nEvent Chosen (E): {event_name}")
+
+
+👉 Prints the name of the event chosen by the user, like "Even numbers".
+
+print(f"Favorable Outcomes (E): {event}")
+
+
+👉 Displays the actual set of favorable outcomes, e.g., {2, 4, 6}.
+
+print(f"Number of outcomes in E: {len(event)}")
+
+
+👉 Shows how many outcomes are in event 
+𝐸
+E.
+For even numbers, this is 3.
+
+print(f"Probability P(E) = |E| / |S| = {len(event)} / {len(sample_space)} = {probability:.2f}")
+
+
+👉 Prints the probability in notation form:
+
+|E| = size of event set.
+
+|S| = size of sample space.
+
+{probability:.2f} → formats the probability to 2 decimal places.
+Example output:
+Probability P(E) = |E| / |S| = 3 / 6 = 0.50
+
+# Optional: Simulate a dice roll
+roll = random.choice(list(sample_space))
+
+
+👉 Simulates a real dice roll.
+
+random.choice(list(sample_space)) randomly picks one element from the sample space {1,2,3,4,5,6}.
+
+Example: It may roll 4.
+
+print("\nSimulating a dice roll...")
+print("Dice rolled:", roll)
+
+
+👉 Prints messages to show the random dice roll result.
+Example: Dice rolled: 4
+
+if roll in event:
+    print("The event occurred ")
+else:
+    print("The event did not occur ")
+
+
+👉 This checks whether the rolled value belongs to the event set.
+
+if roll in event: → True if the dice roll matches the event (favorable outcome).
+
+If yes → "The event occurred".
+
+If no → "The event did not occur".
+
+🔹 Example:
+
+Event = {2,4,6} (even numbers).
+
+Dice rolled = 4.
+
+4 in {2,4,6} → True → "The event occurred".
+
+If Dice rolled = 3, "The event did not occur".

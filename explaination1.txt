@@ -1,0 +1,38 @@
+1)Implement a simple reflex agent in python to navigate a grid enviourment avoiding obstackles and performing basic tasks. 
+Rules:
+1.Simple reflex agent - Acts based only on current percept (no memory).
+Problem Setup:
+A grid world of size M x N.
+Some cells have obstacles.
+Some cells have tasks (e.g., cleaning or picking up an item).
+The agent senses the current cells state (obstacle? task?).
+The agent moves (up/down/left/right) based on simple rules.
+
+Rules:
+agent-A
+obstackles-O
+tasks-T (MORE THN ONE TASK SHLD B THERE)
+
+The agent starts at the top-left corner (row 0, column 0).
+Each step, the agent:
+Checks if it is currently on a task cell.
+If yes, it “performs the task” (clears that task from the grid).
+Otherwise, it tries to move right, down, left, or up in that order.
+It only moves if the next cell is inside the grid and not an obstacle.
+If no move is possible, it stops moving.
+
+1.Simple reflex agent - Acts based only on current percept (no memory).
+Problem Setup:
+A grid world of size M x N.
+Some cells have obstacles.
+Some cells have tasks (e.g., cleaning or picking up an item).
+The agent senses the current cells state (obstacle? task?).
+The agent moves (up/down/left/right) based on simple rules.
+
+Rules:
+agent-A
+obstackles-O
+tasks-T (MORE THN ONE TASK SHLD B THERE)
+
+
+
