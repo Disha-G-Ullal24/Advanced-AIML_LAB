@@ -1,0 +1,81 @@
+_____Description_____
+
+The program implements a K-Nearest Neighbors (KNN) classifier on the Iris dataset.
+
+It splits the dataset into training and test sets to evaluate performance.
+
+Additional boundary test points are added to check how the model handles samples near class edges.
+
+It prints correct and wrong predictions along with the overall accuracy.
+
+____Working Principle____
+
+Data Preparation: Load the Iris dataset and split it into training and testing sets.
+
+Training: Fit the KNN model using the training data (k=3).
+
+Prediction: For each test sample, compute distances to all training points, select the k nearest neighbors, and classify the sample based on majority voting.
+
+Evaluation: Compare predicted labels with actual labels, print correct/wrong predictions, and calculate model accuracy.
+
+___1. What is KNN?
+
+KNN is a supervised machine learning algorithm.
+
+It’s used for classification (predicting categories) and regression (predicting values).
+
+The core idea: "Similar things are close to each other."
+
+KNN doesn’t build a model; it’s a lazy learner—it waits until prediction time.
+
+_____2. How KNN Works
+
+Choose K: the number of nearest neighbors to consider (e.g., K = 3).
+
+Measure distance: compute distance between the new data point and all points in the training set (commonly Euclidean distance).
+
+Find nearest neighbors: select the K points closest to the new point.
+
+Vote/average:
+
+Classification → pick the majority class among neighbors.
+
+Regression → take the average value of neighbors.
+
+_____3. How KNN is Used for Predictions
+
+For a new point, KNN looks at its K nearest neighbors and predicts its class/value based on them.
+
+Example:
+
+Suppose K=3, nearest neighbors classes = [A, A, B] → predicted class = A (majority vote).
+
+____4. Correct and False Predictions
+
+After predicting for all test points:
+
+Correct prediction → predicted class = actual class
+
+False prediction → predicted class ≠ actual class
+
+Even with a perfect dataset, false predictions can happen because:
+
+Small K → sensitive to noise or outliers
+
+Overlapping classes → neighbors from other classes
+
+High-dimensional data → distances can be misleading
+
+Visualizing false predictions: mark points where prediction ≠ actual (like red dots on a scatter plot).
+
+____5. Why KNN is Used
+
+Simple and easy to implement
+
+Non-parametric → makes no assumption about data distribution
+
+Works well for small to medium-sized datasets
+
+Can handle multi-class classification
+
+Naturally adapts to non-linear decision boundaries
